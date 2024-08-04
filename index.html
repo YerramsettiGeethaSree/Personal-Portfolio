@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <script src="https://kit.fontawesome.com/177bb4d7ac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+   
+   
+
+
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>G</span>eetha</a>
+
+        <nav>
+            <label class="navbar"></label>
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#slider">Projects</a></li>
+                <li><a href="#internships">Internship</a></li>
+                <li><a href="#Education">Education</a></li>     
+                <i class="fas fa-times" onclick="closemenu()"></i> 
+                
+                        
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>            
+        </nav>
+    </header>
+    <div id="home">
+    <section class="home">
+        <div class="home-content">
+            <h3>Hi,</h3>
+            <h1>I'm <span>Geetha</span></h1>
+            <h2>Under Graduate in Raghu Institute of Technology</h2>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/geetha_yashh" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/yerramsetti-geetha-sree-435811302" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:srigeetha035@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/YerramsettiGeethaSree" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+    
+        </div>
+            <div class="img-box">
+                <img src="IMAGES/finalig.jpeg" alt="">
+            </div>
+    </section>
+    </div>
+    <!--------------------About------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="IMAGES/about.jpeg">
+                    
+                  
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Geetha Sree, currently pursuing a Bachelor of Technology in Computer Science and Engineering. My academic journey has provided me with a strong foundation in computer science principles, programming, data structures, algorithms and software development.<br><br>I have a keen interest in machine learning, which has led me to work on various projects. I am dedicated to solving complex problems and creating impactful solutions.<br><br>Currently, I am seeking entry-level opportunities where I can leverage my skills and contribute to exciting and meaningful projects in the tech industry.</p>
+                    
+                    <div class="tab-titles">
+                        <h4 Class="tab-links active-link" onclick="opentab('skills')">Skills</h4>
+                        <h4 Class="tab-links" onclick="opentab('certifications')">Certifications</h4>
+                        <h4 Class="tab-links" onclick="opentab('co-curricular')">Co-Curricular</h4>
+                        <h4 Class="tab-links" onclick="opentab('achievements')">Achievements</h4>                       
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Technical Skills</span><br>C Programming Language<br>Web Development<br>Python Programming<br>Machine Learning<br>DSA</li>
+                            <li><span>Soft Skills</span><br>Communication competence<br>Team work<br>Adaptability</li>
+                        </ul> 
+                    </div>
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li><span>Web Development</span><br>Organization: Internshala<br>Duration: 1 Month</li>
+                            <li><span>DBMS</span><br>Organization: NPTEL<br>Duration: 2 Months</li>
+                            <li><span>IOT</span><br>Organization: NPTEL<br>Duration: 2 Months</li>
+                        </ul>
+                    </div>  
+                    <div class="tab-contents" id="co-curricular">
+                        <ul>
+                            <li><span>CSP</span><br>Community Service Project on Animal Shelter and Adoption</li>
+                            <li><span>CSI</span><br>Active member of Computer Society of India since 2022</li>
+                            <li><span>Professional Career Counselling</span><br>Attended this webinar towards making better choices<br></li>
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span>Hackerrank</span><br>5star coder at Hackerrank</li>
+                            <li><span>Talkative Hearts</span><br>Co-author of this book<br>Published in the year 2021</li>
+                            <li><span>Indira Gandhi Rashtriya Gyanpeeth</span><br>Stood second in the essay competetion<br>Conducted by Indira Gandhi Rashtriya Gyanpeeth,Aurangabad</li>                           
+                        </ul>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!---------------------Projects-------------------->
+    <div id="slider">
+        <h1 class="sub-title">My Projects</h1>
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <div id="slides">
+            <div id="overflow">
+                <div class="inner">
+                    <div class="slide slide_1">
+                        <div class="slide-content">
+                            <div class="left">
+                                <img src="IMAGES/obj.jpg" alt="Project1 Image">
+                            </div>
+                            <div class="right">
+                                <div class="top">
+                                    <h2>Object Detection <a href="https://github.com/YerramsettiGeethaSree/Object-Detection" target="_blank"><i class="fab fa-github"></i></a></h2>
+                                    <p>-Developed a real-time object detection system using YOLO and OpenCV, achieving high accuracy and performance in video stream processing.<br>-Integrated pre-trained YOLO model with Non-Maximum Suppression (NMS) to accurately detect and label
+                                        objects in real-time.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide_2">
+                        <div class="slide-content">
+                            <div class="left">
+                                <img src="IMAGES/heightt.jpg" alt="Project2 Image">
+                            </div>
+                            <div class="right">
+                                <div class="top">
+                                    <h2>Height Safety Slot Booking System   <a href="https://github.com/YerramsettiGeethaSree/height-safety-slot-booking-system" target="_blank"><i class="fab fa-github"></i></a></h2>
+                                    <p>-Developed a sophisticated safety management solution for the tasks performed at heights in industrial environments.<br>-Integrated frontend and backend technologies to create a cohesive web application.</p>
+                                </div>
+                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide_3">
+                        <div class="slide-content">
+                            <div class="left">
+                                <img src="IMAGES/tic-tac-toe.png" alt="Project3 Image">
+                            </div>
+                            <div class="right">
+                                <div class="top">
+                                    <h2>Tic Tac Toe <a href="https://github.com/YerramsettiGeethaSree/tic-tac-toe" target="_blank"><i class="fab fa-github"></i></a></h2>
+                                    <p>-Developed a Python-based Tic Tac Toe game with input validation, game state management, and winning or tie condition checks.<br>-Implemented a strategic computer opponent with win and block logic for player vs. computer gameplay.</p>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide_4">
+                        <div class="slide-content">
+                            <div class="left">
+                                <img src="IMAGES/toodooo.png" alt="Project4 Image">
+                            </div>
+                            <div class="right">
+                                <div class="top">
+                                    <h2>To-do List <a href="https://yerramsettigeethasree.github.io/to-do-list/" target="_blank"><i class="fab fa-github"></i></a></h2>
+                                    <p> -Developed an interactive web application with task management features including adding, editing, and deleting tasks.<br>-Incorporated real-time task tracking and celebratory confetti animation for task completion, with a responsive and visually appealing design.</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+        </div>
+        <div id="bullets">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+        </div>
+    </div>
+    
+     
+
+<!----------------internships------------->
+    <div id="internships">
+        <div class="container">
+            <h1 class="sub-title">Internships</h1>
+            <div class="internships-list">               
+                    <div>
+                        <h2>Full Stack Develpment</h2>
+                        <p>RINL<br>A four-week internship<br>Developed a sophisticated Safety Management solution for the tasks performed at heights</p>
+                        
+                    </div>
+                    <div>
+                        <h2>Data Analytics</h2>
+                        <p>AICTE<br>A two-month virtual internship<br>Certificate of completetion for AWS Academy Graduate-AWS Academy Data Analytics</p>
+                       
+                    </div>
+                    <div>
+                        <h2>AIML</h2>
+                        <p>AICTE<br>A two-month virtual internship<br>Certificate of completetion for AWS Academy Graduate</p>
+                       
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------Education-------------------> 
+    
+    <div id="Education">
+        <h1 class="heading">Education</h1>
+    <div class="abt-col-2">
+        <div class="box" onclick="toggleDetails('btech-details')">
+            <div class="title">
+                <spam>Bachelor of Technology (B.Tech)</spam>
+                <i class="fas fa-chevron-down icon"></i>
+            </div>
+            <div id="btech-details" class="details">
+                <p><spams>Raghu Institute of Technology</spams><br>Computer Science and Engineering<br>2021 - 2025 | Visakhapatnam, India<br>8.82 CGPA</p>
+            </div>
+        </div>
+    </div>
+    <div class="abt-col-2">
+        <div class="box" onclick="toggleDetails('intermediate-details')">
+            <div class="title">
+                <spam>Intermediate</spam>
+                <i class="fas fa-chevron-down icon"></i>
+            </div>
+            <div id="intermediate-details" class="details">
+                <p><spams>Sri Chaitanya Junior College</spams><br>MPC<br>2019 - 2021 | Madhurawada, Visakhapatnam<br>94.5%</p>
+            </div>
+        </div>
+    </div>
+    <div class="abt-col-2">
+        <div class="box" onclick="toggleDetails('secondary-details')">
+            <div class="title">
+                <spam>Secondary Education</spam>
+                <i class="fas fa-chevron-down icon"></i>
+            </div>
+            <div id="secondary-details" class="details">
+                <p><spams>Saint Francis School</spams><br>2001 | Madhurawada, Visakhapatnam<br>10 CGPA</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
